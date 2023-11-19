@@ -16,4 +16,5 @@
     <string name="tipo_de_producto">Tipo de producto</string>
     <string name="precio">Precio</string>
     <string name="nombre">Nombre del producto</string>
+    <string name="crear">Crear Producto</string>
 </resources>

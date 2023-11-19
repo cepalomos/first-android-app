@@ -39,15 +39,22 @@ class EditActivity : AppCompatActivity() {
             )
         initComponents()
         initListeners(productData)
-        //initIU(productData)
+        try {
+            initIU(productData)
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 
-    private fun initIU(productData: ProductsItemData) {
-        teNombre.setText(productData.name)
-        tePrecio.setText(productData.price.toString())
-        teTipoProducto.setText(productData.productType)
-        teDescripcion.setText(productData.description)
+    private fun initIU(productData: ProductsItemData?) {
+        productData?.let {
+            teNombre.setText(it.name)
+            tePrecio.setText(it.price.toString())
+            teTipoProducto.setText(it.productType)
+            teDescripcion.setText(it.description)
+        }
     }
+
 
 
     private fun initComponents() {

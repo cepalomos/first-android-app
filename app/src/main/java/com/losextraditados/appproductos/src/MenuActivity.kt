@@ -40,11 +40,11 @@ class MenuActivity : AppCompatActivity() {
     }
 
     private fun viewInitial() {
-        TODO("Not yet implemented")
+        this.onBackPressedDispatcher.onBackPressed()
     }
 
     private fun viewCreate() {
-        val intent = Intent(this@MenuActivity,CreateActivity::class.java)
+        val intent = Intent(this@MenuActivity,CreateProductActivity::class.java)
         startActivity(intent)
     }
 

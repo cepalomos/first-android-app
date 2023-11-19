@@ -47,4 +47,13 @@ object RetrofitClient {
         }
         return retrofit!!.create(ApiSerUpdate::class.java)
     }
+    fun postProducts(): ApiSerCreate{
+        if (retrofit == null){
+            retrofit = Retrofit.Builder()
+                .baseUrl(BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build()
+        }
+        return retrofit!!.create(ApiSerCreate::class.java)
+    }
 }

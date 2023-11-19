@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_margin="12dp"
     android:layout_height="wrap_content">
 
     <ImageView
@@ -19,6 +20,8 @@
         android:textSize="22sp"
         app:layout_constraintStart_toEndOf="@id/ivProduct"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvPrice"
         tools:text="prducts" />
 
     <TextView
@@ -28,6 +31,8 @@
         android:textSize="22sp"
         app:layout_constraintStart_toEndOf="@id/ivProduct"
         app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvDescription"
         tools:text="2394" />
 
     <TextView
@@ -37,6 +42,8 @@
         android:textSize="22sp"
         app:layout_constraintStart_toEndOf="@id/ivProduct"
         app:layout_constraintTop_toBottomOf="@id/tvPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvTypeProduct"
         tools:text="prducts" />
 
     <TextView
@@ -45,6 +52,8 @@
         android:layout_height="wrap_content"
         android:textSize="22sp"
         app:layout_constraintStart_toEndOf="@id/ivProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvDescription"
         tools:text="prducts" />
 
