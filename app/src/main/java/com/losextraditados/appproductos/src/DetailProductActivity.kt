@@ -53,7 +53,7 @@ class DetailProductActivity : AppCompatActivity() {
         nameProdutc.text = productData.name
         descriptionProdutc.text = productData.description
         typeProdutc.text = productData.productType
-        priceProdutc.text = productData.price.toString()
+        priceProdutc.text = "Precio: ${productData.price.toString()}"
         Glide.with(ivProduct.context).load(productData.imageUrl).into(ivProduct)
     }
 
