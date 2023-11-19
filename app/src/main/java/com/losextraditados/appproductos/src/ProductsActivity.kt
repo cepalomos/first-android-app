@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.button.MaterialButton
 import com.losextraditados.appproductos.R
 import com.losextraditados.appproductos.src.adapter.ProductAdapter
 import com.losextraditados.appproductos.src.data.ProductsItemData
@@ -20,6 +21,7 @@ class ProductsActivity : AppCompatActivity() {
 
     private lateinit var apiService: ApiSerProduct
     private lateinit var recicleView: RecyclerView
+    private lateinit var btnBack : MaterialButton
 
     companion object{
         const val PRODUCT = "PRODUCT_DATA"
@@ -28,11 +30,25 @@ class ProductsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_products)
+        initcomponents()
+        initListener()
         initRecicleview()
     }
 
-    private fun initRecicleview() {
+    private fun initListener() {
+        btnBack.setOnClickListener{
+            val intent = Intent(this, MenuActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun initcomponents() {
         recicleView = findViewById(R.id.products_list)
+        btnBack = findViewById(R.id.backButton)
+    }
+
+    private fun initRecicleview() {
+
 
         apiService = RetrofitClient.getProducts()
 

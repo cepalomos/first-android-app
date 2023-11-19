@@ -40,7 +40,8 @@ class MenuActivity : AppCompatActivity() {
     }
 
     private fun viewInitial() {
-        this.onBackPressedDispatcher.onBackPressed()
+        val intent = Intent(this@MenuActivity, HomeActivity::class.java)
+        startActivity(intent)
     }
 
     private fun viewCreate() {
