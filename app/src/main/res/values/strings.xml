@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">App Productos</string>
+    <string name="login">Ingresa</string>
+    <string name="password">Ingrese su password</string>
+    <string name="username">Ingresa tu usuario</string>
+    <string name="salir">Salir</string>
+    <string name="crear_productos">Crear Productos</string>
+    <string name="ver_productos">Ver Productos</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="atras">Atras</string>
+    <string name="imagen_de_producto">Imagen de producto</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="descripcion">Descripción</string>
+    <string name="tipo_de_producto">Tipo de producto</string>
+    <string name="precio">Precio</string>
+    <string name="nombre">Nombre del producto</string>
+</resources>

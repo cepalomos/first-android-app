@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/colorPrimary">
+
+    <!-- Botón "Ver Productos" -->
+    <Button
+        android:id="@+id/btnVerProductos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ver_productos"
+        android:textColor="@color/texto_blanco"
+        android:background="@color/bg_bottom"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Botón "Crear Productos" -->
+    <Button
+        android:id="@+id/btnCrearProductos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crear_productos"
+        android:textColor="@color/texto_blanco"
+        android:background="@color/bg_bottom"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Botón "Salir" -->
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/salir"
+        android:textColor="@color/texto_blanco"
+        android:background="@color/bg_bottom"/>
+
+</LinearLayout>
